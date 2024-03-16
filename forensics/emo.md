@@ -7,7 +7,7 @@ As indicated by the description, the file was a Word document containing a macro
 
 after i found an image inside the document the first thing that came into my mind is to try to extract the photo metadata maybe i could find the flag there but no :"(
 
-after some researching i found that there are tools for analyzing documents which can be found inside oletools python package
+after some researching i found that there are tools for analyzing documents which can be found inside oletools it's a python package,
 you can install the package using the following command
 `sudo -H pip3 install -U oletools`<br>
 My initial step involved using oleid to check for the presence of VBS content within the file.
@@ -23,15 +23,18 @@ After stumbling upon a VBS script, our task was to dump its contents. This was a
 <br>
 Our analysis unveiled an obfuscated PowerShell script within the file, which is nonsense.<br>
 
-i used any-run website which is used for analyzing all the traffic in the world and captures malicious traffic and i found our script is pressent there <br>
+Through the Any.Run website, a platform that monitors global traffic and detects malicious behavior, I identified our script among the captured data. <br>
 ![alt text](https://github.com/MohamedAboElnasr/CTF/assets/114421344/307239b3-5cc6-487e-a387-8c407bac0b7c)<br>
-i copied the powershell script and i opend CyberChef to decode the script and remove the nullbytes from it <br>
+After copying the PowerShell script, I utilized CyberChef to decode the script and eliminate any null bytes. <br>
 ![5](https://github.com/MohamedAboElnasr/CTF/assets/114421344/a5174d10-3413-4aaf-86e9-93511d23de76)<br>
-so as we see it's stil obfuscated so i deofuscated the script by removing the ';' and replace it with a new line<br>
-and as a final result i got the script and i'm only intersted in these two lines, it's an foreach that iterates throw an array and xor the elements of it with 0xdf <br>
+Even after initial attempts, the script persisted in its obfuscated form. To deobfuscate it, I replaced ';' with new lines<br>
+After the final process, I extracted the script and focused on two specific lines: a 'foreach' loop that iterates through an array, XORing its elements with 0xdf. <br>
 ![6](https://github.com/MohamedAboElnasr/CTF/assets/114421344/ecc332e7-6bf0-4f9b-8248-459f58621905)
 
-so i asked our beloved chatgpt to make me a script to do this task for me just by instructor him to xor the elements and convert them to ascii, and as a final result i got this script
+Afterwards, I requested our reliable ChatGPT to create a script for me, instructing it to XOR the elements and convert them to ASCII. The resulting script led me to the flag.<br>
+![flag](https://github.com/MohamedAboElnasr/CTF/assets/114421344/b16b890f-dc6f-4b71-b8ae-10cc86b5baa5)
+<br>
+thanks for reading.
  
 
 
