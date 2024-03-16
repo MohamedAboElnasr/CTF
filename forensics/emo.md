@@ -23,7 +23,7 @@ After stumbling upon a VBS script, our task was to dump its contents. This was a
 <br>
 Our analysis unveiled an obfuscated PowerShell script within the file, which is nonsense.<br>
 
-Through the Any.Run website, a platform that monitors global traffic and detects malicious behavior, I identified our script among the captured data. <br>
+Through the Any.Run website, a platform that monitors global traffic and detects malicious behavior, I identified our script among the captured data, you can find the report [here](https://app.any.run/tasks/b35e3e6a-257d-489a-8b3b-81f9d4b05c3d/) <br>
 ![alt text](https://github.com/MohamedAboElnasr/CTF/assets/114421344/307239b3-5cc6-487e-a387-8c407bac0b7c)<br>
 After copying the PowerShell script, I utilized CyberChef to decode the script and eliminate any null bytes. <br>
 ![5](https://github.com/MohamedAboElnasr/CTF/assets/114421344/a5174d10-3413-4aaf-86e9-93511d23de76)<br>
