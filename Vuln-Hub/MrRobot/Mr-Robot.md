@@ -169,7 +169,7 @@ SUID Bit: This is a file permission that allows users to execute the file as the
 After discovering that `nmap` has the SUID bit, I referred to [gtfobins](https://gtfobins.github.io/gtfobins/nmap/#suid) and tried the second method:
 
 ```bash
-sudo nmap --interactive
+nmap --interactive
 nmap> !sh
 ```
 
