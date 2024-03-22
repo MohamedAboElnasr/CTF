@@ -64,7 +64,7 @@ Next, we encountered `fsocity.dic`, a text file containing a whopping 858,160 li
 
 ![sorted](https://github.com/MohamedAboElnasr/CTF/assets/114421344/60d744a7-4d72-466e-96f0-d45d7c90bf7b)
 
-Returning to our trusty dirsearch tool, we uncovered another directory named `wp-login.php`. This revelation indicated that the website was built with WordPress. My immediate thought was to leverage wpscan, an excellent tool for extracting plugins and enumerating usernames and passwords. We'll revisit this shortly, but first, we attempted to log in with default credentials like `username=admin&password=admin`. The response informed us that the username was invalid.
+Returning to dirsearch tool, we uncovered another directory named `wp-login.php`. This revelation indicated that the website was built with WordPress. My immediate thought was to leverage wpscan, an excellent tool for extracting plugins and enumerating usernames and passwords. We'll revisit this shortly, but first, we attempted to log in with default credentials like `username=admin&password=admin`. The response informed us that the username was invalid.
 
 ![invalid](https://github.com/MohamedAboElnasr/CTF/assets/114421344/e751a152-9ecc-41bd-8ce9-f87a224bd708)
 
