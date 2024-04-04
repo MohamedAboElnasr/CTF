@@ -99,7 +99,7 @@ we found port 80 for http and 22 for ssh are open, port 80 means there is a webs
 * it's an encoded cypher maybe base64 or base32 we will see, to decode this cypher i used CyberChef and after some trial and error i found that it's an base58 
 
 
-      <br>
+  <br>
 
   <div>
     <img src="./Empire/ssh_decode.PNG" highet="500" width="700">
@@ -124,10 +124,12 @@ we found port 80 for http and 22 for ssh are open, port 80 means there is a webs
 <br>
 
 * Remember the message we found on the website that tells us there is another hidden directory, Well it does not just end there it gave us anothe hints like a username which was `icex64` and a `fasttrack` which is a word list used for cracking passwords and brute-forcing, so we will use this wordlist for cracking the ssh password.
+  
 <br>
+
  ```bash
- john hash --wordlist=/usr/share/wordlists/fasttrack.txt  
-  ```
+   john hash --wordlist=/usr/share/wordlists/fasttrack.txt  
+ ```
  <br>
 
   <div>
@@ -139,7 +141,7 @@ we found port 80 for http and 22 for ssh are open, port 80 means there is a webs
 ```bash 
 chmod 600 rsa
 ```
-  <br>
+<br>
 
 ## Gaining Access 
 
