@@ -125,7 +125,7 @@ The `GetST` tool works as follows:
 2. It then uses this TGT to request a Ticket Granting Service (TGS) from the Key Distribution Center (KDC) for the user we want to impersonate, which in this case is the `administrator`.
 
 By impersonating the `administrator`, we can export the TGS we obtained. With this, we gain access to the machine using `Wmiexec`, and thus, we have achieved the second and final flag.
-![](./images/wmiexec.png)
+![](./images/wmiexec.png)  
 And that’s it you’ve captured all the flags on the machine. However, you might want to experiment with persistence methods and practice them as you see fit.
 
 
